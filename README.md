@@ -6,11 +6,10 @@ DeepSeek R1 is a powerful large language model (LLM) accessible through NVIDIAâ€
 ###### Step 1: Install Required Libraries
 Youâ€™ll need the official OpenAI client SDK for Python.
 
-'''
-
+''''
 pip install openai
 
-'''
+''''
 
 
 
