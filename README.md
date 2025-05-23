@@ -39,3 +39,38 @@ client = OpenAI(
 
 **api_key: Ensures authenticated access.**
 
+
+###### Step 4: Prepare the Chat Completion Request
+```
+completion = client.chat.completions.create(
+    model="deepseek-ai/deepseek-r1",
+    messages=[
+        {"role": "user", "content": "Explain quantum computing in simple terms."}
+    ],
+    temperature=0.6,
+    top_p=0.8,
+    max_tokens=1024,
+    stream=True
+)
+```
+
+###### Step 5: Stream and Display the AI Response
+
+```
+for chunk in completion:
+    if chunk.choices[0].delta.content is not None:
+        print(chunk.choices[0].delta.content, end="")
+```
+
+### Use Cases for DeepSeek R1
+
+•	Natural language understanding
+
+•	Conversational AI (chatbots)
+
+•	Content summarization
+
+•	Code generation and explanation
+
+•	Research assistants and Q&A bots
+
