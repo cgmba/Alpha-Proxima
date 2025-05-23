@@ -11,4 +11,13 @@ pip install openai
 ````
 
 
+###### Step 2: Get Your API Key from NVIDIA NGC
+
+To access NVIDIA's hosted models via API, you need an API key:
+
++ Go to https://org.ngc.nvidia.com.
+
++ Log in and navigate to Setup > API Keys.
+
++ Generate a new key or copy your existing key.
 
