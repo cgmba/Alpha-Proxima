@@ -23,3 +23,19 @@ To access NVIDIA's hosted models via API, you need an API key:
 
 
 **Note: This key is only required if you're running the code outside of NVIDIA’s infrastructure.**
+
+
+###### Step 3: Initialize the OpenAI Client with NVIDIA Endpoint
+```
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://integrate.api.nvidia.com/v1",  # NVIDIA's AI endpoint
+    api_key="YOUR_NVIDIA_API_KEY"
+)
+```
+
+**base_url: Routes the OpenAI client to NVIDIA’s backend instead of OpenAI’s.**
+
+**api_key: Ensures authenticated access.**
+
