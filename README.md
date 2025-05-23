@@ -21,3 +21,5 @@ To access NVIDIA's hosted models via API, you need an API key:
 
 + Generate a new key or copy your existing key.
 
+
+** Note: This key is only required if you're running the code outside of NVIDIA’s infrastructure. **
